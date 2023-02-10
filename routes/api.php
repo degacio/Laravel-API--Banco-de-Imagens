@@ -24,14 +24,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-#Route::get('/products', [ProductController::class, 'index']);
-#Route::get('/products/{id}', [ProductController::class, 'show']);
-#Route::get('/products/search/{name}', [ProductController::class, 'search']);
-#Route::post('/products', [ProductController::class, 'store']);
-#Route::put('/products/{id}', [ProductController::class, 'update']);
-#Route::delete('/products/{id}', [ProductController::class, 'destroy']);
-
 Route::get('/lotes', [BatchsController::class, 'lotes']);
 Route::get('/downloads', [DownloadsController::class, 'downloads']);
 Route::get('/images', [ImagesController::class, 'images']);
